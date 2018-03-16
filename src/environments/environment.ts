@@ -4,5 +4,11 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  nmdAPIV1: {
+    url: 'http://10.5.140.13:8080/assets/data/api/v1',
+    endPoints: {
+      'posts': '/posts.json'
+    }
+  }
 };

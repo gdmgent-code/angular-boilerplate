@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+import { NmdService } from './services/nmd.service';
 
 @NgModule({
   imports: [
@@ -17,6 +18,7 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
     FooterComponent,
     HeaderComponent,
     NotFoundPageComponent
-  ]
+  ],
+  providers: [NmdService]
 })
 export class CoreModule { }

@@ -8,15 +8,10 @@ import { Post } from '../../../core/models/post';
   styleUrls: ['./posts-page.component.scss']
 })
 export class PostsPageComponent implements OnInit {
-  post: Post;
-
   constructor() { }
 
   ngOnInit() {
-    const post = new Post();
-    post.id = 'kjdghkfdgjsrldkghfxjgmldfk';
-    post.title = 'jd dskkds!ds ndosdsdsj dsjdhsjd';
-    this.post = post;
+    
   }
 
 }
