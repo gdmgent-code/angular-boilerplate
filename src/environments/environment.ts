@@ -10,5 +10,11 @@ export const environment = {
     endPoints: {
       'posts': '/posts.json'
     }
+  },
+  trotsAPI: {
+    url: 'http://www.gdm.gent/trots/api/',
+    endPoints: {
+      'projects': '/projects.json'
+    }
   }
 };

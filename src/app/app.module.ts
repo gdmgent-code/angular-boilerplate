@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { HomeModule } from './home/home.module';
 import { PostsModule } from './posts/posts.module';
+import { TrotsModule } from './trots/trots.module';
 
 /*
 Components
@@ -25,6 +26,7 @@ import { AppComponent } from './app.component';
     CoreModule,
     HomeModule,
     PostsModule,
+    TrotsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

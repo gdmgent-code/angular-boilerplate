@@ -1,0 +1,11 @@
+<div *ngIf="projects">
+  <article *ngFor="let project of projects">
+    <h2>{{ project.title }}</h2>
+    <picture>
+      <img src="{{ project.thumbnail_url }}" title="{{ project.title }}">
+    </picture>
+  </article>
+</div>
+<div *ngIf="!projects">
+  No projects
+</div>
