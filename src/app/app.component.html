@@ -1,4 +1,8 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="push">NAVIGATION</mat-sidenav>
+    <mat-sidenav-content>
+        <app-header (sidebarToggle)="sidenav.toggle()"></app-header>
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+    </mat-sidenav-content>
+</mat-sidenav-container>

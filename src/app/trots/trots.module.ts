@@ -15,16 +15,21 @@ import { ProjectsListComponent } from './components/projects-list/projects-list.
 Pages
 */
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
+import { ProjectPageComponent } from './pages/project-page/project-page.component';
+import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 @NgModule({
   imports: [
+    AppRoutingModule,
     CommonModule,
     CoreModule
   ],
-  declarations: [ProjectsListComponent, ProjectsPageComponent],
+  declarations: [ProjectsListComponent, ProjectsPageComponent, ProjectPageComponent, ProjectDetailComponent],
   exports: [
     ProjectsListComponent,
+    ProjectPageComponent,
     ProjectsPageComponent
   ]
 })

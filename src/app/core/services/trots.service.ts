@@ -21,4 +21,17 @@ export class TrotsService {
     return this._httpClient.get<Array<Project>>(`${this._apiEndPoint}`);
   }
 
+  getProjectById(id: String, callback: (project: Project) => void, callbackError: (err: Error) => void) {
+    return this.getProjects().subscribe(
+      projects => {
+        const project = projects.filter(project => project.id === id)[0];
+        if(project === undefined) {
+          callbackError(new Error('Project Not found!'));
+        } else {
+          callback(project);
+        }
+      }
+    )
+  }
+
 }
