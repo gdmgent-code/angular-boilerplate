@@ -1,19 +1,21 @@
-<div *ngIf="projects">
-  <mat-card *ngFor="let project of projects" style="width:25%; float: left;">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>{{ project.title }}</mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="{{ project.thumbnail_url }}" alt="{{ project.title }}">
-    <mat-card-content>
-      <p>
-        {{ project.synopsis }}
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>{{ project.type }}</button>
-    </mat-card-actions>
-  </mat-card>
+<div *ngIf="projects" class="row">
+  <div class="col-12 col-sm-12 cols-md6 col-lg-4" *ngFor="let project of projects">
+      <mat-card>
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{ project.title }}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="{{ project.thumbnail_url }}" alt="{{ project.title }}">
+        <mat-card-content>
+          <p>
+            {{ project.synopsis }}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>{{ project.type }}</button>
+        </mat-card-actions>
+      </mat-card>
+  </div>  
 </div>
 <div *ngIf="!projects">
   No projects
