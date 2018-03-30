@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 
-import { MatSidenavModule } from '@angular/material';
+import { MatCardModule, MatSidenavModule } from '@angular/material';
 
 @NgModule({
   imports: [
+    MatCardModule,
     MatSidenavModule
   ],
   declarations: [],
   exports:  [
+    MatCardModule,
     MatSidenavModule
   ]
 })

@@ -2,6 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 /*
+Libraries
+*/
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireStorageModule } from 'angularfire2/storage';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+/*
 Modules
 */
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +24,7 @@ import { TrotsModule } from './trots/trots.module';
 Components
 */
 import { AppComponent } from './app.component';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -23,6 +32,10 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    AngularFireAuthModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,

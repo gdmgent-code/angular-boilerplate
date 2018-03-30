@@ -5,6 +5,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 import { NmdService } from './services/nmd.service';
 import { TrotsService } from './services/trots.service';
+import { FirebaseService } from './services/firebase.service';
 
 @NgModule({
   imports: [
@@ -20,6 +21,6 @@ import { TrotsService } from './services/trots.service';
     HeaderComponent,
     NotFoundPageComponent
   ],
-  providers: [NmdService, TrotsService]
+  providers: [NmdService, TrotsService, FirebaseService]
 })
 export class CoreModule { }

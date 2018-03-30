@@ -18,13 +18,15 @@ import { ProjectsPageComponent } from './pages/projects-page/projects-page.compo
 import { ProjectPageComponent } from './pages/project-page/project-page.component';
 import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { MaterialModule } from '../material/material.module';
 
 
 @NgModule({
   imports: [
     AppRoutingModule,
     CommonModule,
-    CoreModule
+    CoreModule,
+    MaterialModule
   ],
   declarations: [ProjectsListComponent, ProjectsPageComponent, ProjectPageComponent, ProjectDetailComponent],
   exports: [
