@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
-/*@import 
-    '~@angular/material/theming';*/
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import 
+    '~@angular/material/theming';
 
 @import 
     'abstracts/variables';
@@ -12,3 +11,11 @@
 
 @import 
     'vendor/bootstrap-grid';
+
+// Define the default theme (same as the example above).
+$nmd-app-primary: mat-palette($mat-indigo);
+$nmd-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+$nmd-app-theme:   mat-light-theme($nmd-app-primary, $nmd-app-accent);
+
+@include mat-core();
+@include angular-material-theme($nmd-app-theme);

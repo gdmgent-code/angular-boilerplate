@@ -1,0 +1,12 @@
+.header {
+    &-spacer {
+        flex: 1 1 auto;
+    }
+    &-icon {
+        margin-right: 16px;
+
+        &:last-of-type {
+            margin-left: 16px;
+        }
+    }
+}

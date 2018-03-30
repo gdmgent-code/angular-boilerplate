@@ -1,16 +1,23 @@
 import { NgModule } from '@angular/core';
 
-import { MatCardModule, MatSidenavModule } from '@angular/material';
+import { MatCardModule, MatIconModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
+
+import { PlatformModule } from '@angular/cdk/platform';
+import { ObserversModule } from '@angular/cdk/observers';
 
 @NgModule({
   imports: [
     MatCardModule,
-    MatSidenavModule
+    MatIconModule,
+    MatSidenavModule,
+    MatToolbarModule
   ],
   declarations: [],
   exports:  [
     MatCardModule,
-    MatSidenavModule
+    MatIconModule,
+    MatSidenavModule,
+    MatToolbarModule
   ]
 })
 export class MaterialModule { }

@@ -1,4 +1,9 @@
-<p>
-  header works!
-</p>
-<a (click)="sidebarOpen()">HAMB</a>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <mat-icon class="header-icon" (click)="sidebarOpen()">menu</mat-icon>
+    <span>Web Development 2</span>
+    <span class="header-spacer"></span>    
+    <mat-icon class="header-icon"><i class="material-icons">thumb_up</i></mat-icon><span>Graphics</span>
+    <mat-icon class="header-icon">favorite</mat-icon><span>Code</span>
+  </mat-toolbar-row>
+</mat-toolbar>

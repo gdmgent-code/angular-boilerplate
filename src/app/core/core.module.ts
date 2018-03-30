@@ -6,10 +6,12 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
 import { NmdService } from './services/nmd.service';
 import { TrotsService } from './services/trots.service';
 import { FirebaseService } from './services/firebase.service';
+import { MaterialModule } from '../material/material.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule
   ],
   declarations: [
     HeaderComponent, 
