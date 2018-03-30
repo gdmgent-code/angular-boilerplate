@@ -7,6 +7,7 @@ import { NmdService } from './services/nmd.service';
 import { TrotsService } from './services/trots.service';
 import { FirebaseService } from './services/firebase.service';
 import { MaterialModule } from '../material/material.module';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   imports: [
@@ -16,12 +17,14 @@ import { MaterialModule } from '../material/material.module';
   declarations: [
     HeaderComponent, 
     FooterComponent, 
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    SidebarComponent
   ],
   exports: [
     FooterComponent,
     HeaderComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    SidebarComponent
   ],
   providers: [NmdService, TrotsService, FirebaseService]
 })

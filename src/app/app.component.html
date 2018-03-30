@@ -1,5 +1,7 @@
 <mat-sidenav-container>
-    <mat-sidenav #sidenav mode="push" class="offcanvas">NAVIGATION</mat-sidenav>
+    <mat-sidenav #sidenav mode="push" class="offcanvas">
+        <app-sidebar (sidebarClose)="sidenav.close()"></app-sidebar>
+    </mat-sidenav>
     <mat-sidenav-content>
         <app-header (sidebarToggle)="sidenav.toggle()"></app-header>
         <router-outlet></router-outlet>

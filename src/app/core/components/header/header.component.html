@@ -1,9 +1,11 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <mat-icon class="header-icon" (click)="sidebarOpen()">menu</mat-icon>
+    <button mat-icon-button color="primary" (click)="sidebarOpen()">
+        <mat-icon aria-label="Close Offcanvas">menu</mat-icon>
+    </button>
     <span>Web Development 2</span>
     <span class="header-spacer"></span>    
-    <mat-icon class="header-icon"><i class="material-icons">thumb_up</i></mat-icon><span>Graphics</span>
+    <mat-icon class="header-icon">thumb_up</mat-icon><span>Graphics</span>
     <mat-icon class="header-icon">favorite</mat-icon><span>Code</span>
   </mat-toolbar-row>
 </mat-toolbar>

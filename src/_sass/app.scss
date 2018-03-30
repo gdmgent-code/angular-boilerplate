@@ -13,8 +13,8 @@
     'vendor/bootstrap-grid';
 
 // Define the default theme (same as the example above).
-$nmd-app-primary: mat-palette($mat-indigo);
-$nmd-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+$nmd-app-primary: mat-palette($mat-pink);
+$nmd-app-accent:  mat-palette($mat-indigo, A200, A100, A400);
 $nmd-app-theme:   mat-light-theme($nmd-app-primary, $nmd-app-accent);
 
 @include mat-core();

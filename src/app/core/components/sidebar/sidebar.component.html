@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button color="primary" (click)="close()">
+        <mat-icon aria-label="Close sidebar">close</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-nav-list>
+  <mat-list-item *ngFor="let link of links">
+      <a matLine href="...">{{ link.title }}</a>
+      <button mat-icon-button (click)="showInfo(link)">
+        <mat-icon>info</mat-icon>
+      </button>
+  </mat-list-item>
+</mat-nav-list>
